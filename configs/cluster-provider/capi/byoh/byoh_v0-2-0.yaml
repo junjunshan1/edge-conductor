@@ -201,6 +201,8 @@ spec:
       path: /etc/containers/auth.json
       permissions: "0644"
     - content: |
+        unqualified-search-registries = ["{{ .Kitconfig.Parameters.GlobalSettings.ProviderIP }}:{{ .Kitconfig.Parameters.GlobalSettings.RegistryPort }}", "docker.io"]
+
         [[registry]]  
         prefix = "docker.io"
         insecure = false
