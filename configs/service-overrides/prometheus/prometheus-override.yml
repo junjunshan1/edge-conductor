@@ -15,9 +15,9 @@ prometheusOperator:
     certManager:
       enabled: true
       rootCert:
-        duration: "26280h"
+        duration: "8750"
       admissionCert:
-        duration: "26280h"
+        duration: "8750"
       issuerRef:
         name: "edge-conductor-ca"
         kind: "ClusterIssuer"
